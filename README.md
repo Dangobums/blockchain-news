@@ -5,3 +5,4 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- Setup NVM install though https://github.com/nvm-sh/nvm#installing-and-updating and config to detech .nvmrc file https://github.com/nvm-sh/nvm#deeper-shell-integration
