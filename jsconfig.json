@@ -2,17 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "~/*": [
-        "./*"
-      ]
-    }
+      "@/*": ["./*"],
+      "~/*": ["./*"]
+    },
+    "jsx": "preserve"
   },
-  "exclude": [
-    "node_modules",
-    "static",
-    "dist"
-  ]
+  "exclude": ["node_modules", "static", "dist"]
 }
