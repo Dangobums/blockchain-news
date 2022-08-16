@@ -1,11 +1,17 @@
 <script setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
+import { counterStore } from '@/stores'
 
+const store = counterStore()
+const counter = computed(() => store.counter)
+const doubleCount = computed(() => store.doubleCount)
+const doubleCountPlus = computed(() => store.doublePlusOne)
+const increment = () => {
+  store.increment()
+}
 defineProps({
   msg: { type: String, default: '' },
 })
-
-const count = ref(0)
 </script>
 
 <template>
@@ -14,13 +20,13 @@ const count = ref(0)
   <div class="card">
     <button
       type="button"
-      class="border-none active:border-none bg-red-700"
-      @click="count++"
+      class="border-none active:border-none text-[#069255]"
+      @click="increment"
     >
-      count is {{ count }}
+      count is {{ counter }}
     </button>
-    <p class="text-center text-3xl font-bold">
-      Edit
+    <p class="pt-8 text-center text-3xl font-bold">
+      Edit {{ doubleCount }} {{ doubleCountPlus }}
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
   </div>

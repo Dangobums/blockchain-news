@@ -5,7 +5,17 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:vue/vue3-recommended', 'prettier'],
   rules: {
     // override/add rules settings here, such as:
-    'vue/no-unused-vars': 'error',
+    'lodash/prefer-lodash-method': 'off',
+    'lodash/import-scope': 'off',
+    'lodash/prefer-noop': 'off',
+
+    'arrow-parens': 'off',
+    'import/order': 'off',
+    'comma-dangle': 'off',
+    'no-console': 'off',
+
+    'vue/no-unused-vars': 'off',
+    'no-unused-vars': 'off',
     'vue/multi-word-component-names': [
       'error',
       {
@@ -41,7 +51,7 @@ module.exports = {
 //     'no-console': 'off',
 //     'no-debugger': 'warn',
 //     'no-var': 'error',
-//     'no-unused-vars': 'off',
+//     'vue/no-unused-vars': 'off',
 //     'block-scoped-var': 'error',
 //     'no-param-reassign': 'error',
 //     semi: ['warn', 'always'],
@@ -88,11 +98,11 @@ module.exports = {
 //     camelcase: 'off',
 
 //     // typescript-eslint
-//     '@typescript-eslint/no-unused-vars': [
-//       'warn',
-//       { vars: 'all', args: 'none' },
-//     ],
-//     '@typescript-eslint/no-explicit-any': 'off',
+//     // '@typescript-eslint/no-unused-vars': [
+//     //   'warn',
+//     //   { vars: 'all', args: 'none' },
+//     // ],
+//     // '@typescript-eslint/no-explicit-any': 'off',
 
 //     // vue
 //     'vue/attribute-hyphenation': 'off',
